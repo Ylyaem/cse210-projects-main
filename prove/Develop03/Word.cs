@@ -9,7 +9,16 @@ public class Word
     private string _text = "" ;
     private bool _isHidden = true ;
 
+    public string text
+     {get {return _text ;}
+     
+     set {_text = value ;}     }
 
+
+    public Word(string text)
+     {_text = text ;
+      _isHidden = false ;} 
+    
     public void Hide()
     {
         _isHidden = true ;
